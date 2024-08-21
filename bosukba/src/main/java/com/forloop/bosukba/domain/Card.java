@@ -10,12 +10,13 @@ import lombok.ToString;
 @Entity
 @Getter @Setter
 @ToString
-public class User {
+public class Card {
 
     @Id @GeneratedValue
     private Long id;
 
-    private String password;
+    private Grade grade;
 
-    private String nickname;
+    private String imagePath;
+
 }
