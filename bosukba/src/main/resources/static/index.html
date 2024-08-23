@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bosukba</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+        .game-board {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .card-row {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .card {
+            width: 80px;
+            height: 120px;
+            margin: 0 5px;
+            background-color: #ddd;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+        .tokens {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .token {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 5px;
+            background-color: #888;
+        }
+        .player-stats {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .player {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            width: 45%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    Bosukba
+</header>
+<div class="container">
+    <div class="game-board">
+        <div class="card-row">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+        <div class="card-row">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+        <div class="card-row">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+        <div class="tokens">
+            <div class="token" style="background-color: red;"></div>
+            <div class="token" style="background-color: blue;"></div>
+            <div class="token" style="background-color: green;"></div>
+            <div class="token" style="background-color: black;"></div>
+            <div class="token" style="background-color: white;"></div>
+        </div>
+    </div>
+    <div class="player-stats">
+        <div class="player">
+            <h3>Player 1</h3>
+            <!-- 플레이어 1 정보 표시 -->
+        </div>
+        <div class="player">
+            <h3>Player 2</h3>
+            <!-- 플레이어 2 정보 표시 -->
+        </div>
+    </div>
+    <div class="footer">
+        <button>다음 턴</button>
+    </div>
+</div>
+</body>
+</html>

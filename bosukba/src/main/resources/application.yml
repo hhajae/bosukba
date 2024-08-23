@@ -1,7 +1,7 @@
 spring:
-  mvc:
-    servlet:
-      path: /saturi-api
+#  mvc:
+#    servlet:
+#      path: /saturi-api
   datasource:
     url: jdbc:mysql://localhost:3306/bosukba?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
     username: ssafy
